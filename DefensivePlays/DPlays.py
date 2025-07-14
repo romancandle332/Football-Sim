@@ -33,8 +33,54 @@ class DefensivePlay:
             self.UseSS2 = False
             self.UseFS1 = True
             self.UseFS2 = False
+
+             ##What Roles do they have?
+            self.RoleNT = "N/A"
+            self.LocationNT = "N/A"
+            self.RoleLDT = "1-Gap"
+            self.LocationLDT = "Right A Gap"
+            self.RoleRDT = "1-Gap"
+            self.LocationRDT = "Left A Gap"
+            self.RoleLDE = "1-Gap"
+            self.LocationLDE = "Right C Gap"
+            self.RoleRDE = "1-Gap"
+            self.LocationRDE = "Left C Gap"
+            self.RoleSam = "N/A"
+            self.LocationSam = "N/A"
+            self.RoleLOLB = "N/A"
+            self.LocationLOLB = "N/A"
+            self.RoleMike = "N/A"
+            self.LocationMike = "N/A"
+            self.RoleMLB = "N/A"
+            self.LocationMLB = "N/A"
+            self.RoleWill = "N/A"
+            self.LocationWill = "N/A"
+            self.RoleROLB = "N/A"
+            self.LocationROLB = "N/A"
+            self.RoleJack = "N/A"
+            self.LocationJack = "N/A"
+            self.RoleBandit = "N/A"
+            self.LocationBandit = "N/A"
+            self.RoleCB1 = "N/A"
+            self.LocationCB1 = "N/A"
+            self.RoleCB2 = "N/A"
+            self.LocationCB2 = "N/A"
+            self.RoleCB3 = "N/A"
+            self.LocationCB3 = "N/A"
+            self.RoleCB4 = "N/A"
+            self.LocationCB4 = "N/A"
+            self.RoleCB5 = "N/A"
+            self.LocationCB5 = "N/A"
+            self.RoleSS1 = "N/A"
+            self.LocationSS1 = "N/A"
+            self.RoleSS2 = "N/A"
+            self.LocationSS2 = "N/A"
+            self.RoleFS1 = "N/A"
+            self.LocationFS1 = "N/A"
+            self.RoleFS2 = "N/A"
+            self.LocationFS2 = "N/A" 
         elif x == 1:
-            elf.FormationName = "Base 4 Nickel"
+            self.FormationName = "Base 4 Nickel"
             self.BaseLine = 4
             self.BaseBackers = 2
             self.BaseCorners = 3
@@ -63,7 +109,36 @@ class DefensivePlay:
             self.UseSS2 = False
             self.UseFS1 = True
             self.UseFS2 = False
-            
+        elif x == 2:
+            self.FormationName = "Base 4 Dime"
+            self.BaseLine = 4
+            self.BaseBackers = 1
+            self.BaseCorners = 4
+            self.BaseSafeties = 2
+
+            ##What Positions are used?
+            self.UseNT = False
+            self.UseLDT = True
+            self.UseRDT = False
+            self.UseLDE = True
+            self.UseRDE = True
+            self.UseSam = False
+            self.UseLOLB = False
+            self.UseMike = False
+            self.UseMLB = True
+            self.UseWill = False
+            self.UseROLB = False
+            self.UseJack = False
+            self.UseBandit = False
+            self.UseCB1 = True
+            self.UseCB2 = True
+            self.UseCB3 = True
+            self.UseCB4 = True
+            self.UseCB5 = False
+            self.UseSS1 = True
+            self.UseSS2 = False
+            self.UseFS1 = True
+            self.UseFS2 = False
         elif x == :
             self.FormationName = "3-4"
             self.BaseLine = 3
@@ -95,7 +170,7 @@ class DefensivePlay:
             self.UseFS1 = True
             self.UseFS2 = False
         elif x == :
-            elf.FormationName = "Base"
+            self.FormationName = "Base"
             self.BaseLine = 0
             self.BaseBackers = 0
             self.BaseCorners = 0
@@ -155,27 +230,48 @@ class DefensivePlay:
             self.UseFS1 = False
             self.UseFS2 = False
 
-
-        ##What Roles do they have?
-        self.RoleNT = "N/A"
-        self.RoleLDT = "N/A"
-        self.RoleRDT = "N/A"
-        self.RoleLDE = "N/A"
-        self.RoleRDE = "N/A"
-        self.RoleSam = "N/A"
-        self.RoleLOLB = "N/A"
-        self.RoleMike = "N/A"
-        self.RoleMLB = "N/A"
-        self.RoleWill = "N/A"
-        self.RoleROLB = "N/A"
-        self.RoleJack = "N/A"
-        self.RoleBandit = "N/A"
-        self.RoleCB1 = "N/A"
-        self.RoleCB2 = "N/A"
-        self.RoleCB3 = "N/A"
-        self.RoleCB4 = "N/A"
-        self.RoleCB5 = "N/A"
-        self.RoleSS1 = "N/A"
-        self.RoleSS2 = "N/A"
-        self.RoleFS1 = "N/A"
-        self.RoleFS2 = "N/A"        
+            ##What Roles do they have?
+            self.RoleNT = "N/A"
+            self.LocationNT = "N/A"
+            self.RoleLDT = "N/A"
+            self.LocationLDT = "N/A"
+            self.RoleRDT = "N/A"
+            self.LocationRDT = "N/A"
+            self.RoleLDE = "N/A"
+            self.LocationLDE = "N/A"
+            self.RoleRDE = "N/A"
+            self.LocationRDE = "N/A"
+            self.RoleSam = "N/A"
+            self.LocationSam = "N/A"
+            self.RoleLOLB = "N/A"
+            self.LocationLOLB = "N/A"
+            self.RoleMike = "N/A"
+            self.LocationMike = "N/A"
+            self.RoleMLB = "N/A"
+            self.LocationMLB = "N/A"
+            self.RoleWill = "N/A"
+            self.LocationWill = "N/A"
+            self.RoleROLB = "N/A"
+            self.LocationROLB = "N/A"
+            self.RoleJack = "N/A"
+            self.LocationJack = "N/A"
+            self.RoleBandit = "N/A"
+            self.LocationBandit = "N/A"
+            self.RoleCB1 = "N/A"
+            self.LocationCB1 = "N/A"
+            self.RoleCB2 = "N/A"
+            self.LocationCB2 = "N/A"
+            self.RoleCB3 = "N/A"
+            self.LocationCB3 = "N/A"
+            self.RoleCB4 = "N/A"
+            self.LocationCB4 = "N/A"
+            self.RoleCB5 = "N/A"
+            self.LocationCB5 = "N/A"
+            self.RoleSS1 = "N/A"
+            self.LocationSS1 = "N/A"
+            self.RoleSS2 = "N/A"
+            self.LocationSS2 = "N/A"
+            self.RoleFS1 = "N/A"
+            self.LocationFS1 = "N/A"
+            self.RoleFS2 = "N/A"
+            self.LocationFS2 = "N/A"        
