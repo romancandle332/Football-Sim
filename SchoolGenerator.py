@@ -7,7 +7,7 @@ StateList = ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Co
              "Washington","West Virginia","Wisconsin","Wyoming","Canada"]
 
 class School():
-    def __init__(self,FullName,ShortName,Abbreviation,Nickname,State,City,PrimaryColor,SecondaryColor,StadiumName):
+    def __init__(self,FullName,ShortName,Abbreviation,Nickname,State,City,PrimaryColor,SecondaryColor,StadiumName,Conference):
         ##User Inputted Values
         self.fullname = FullName
         self.shortname = ShortName
@@ -17,7 +17,7 @@ class School():
         self.city = City
         self.primary_color = PrimaryColor
         self.secondary_color = SecondaryColor
-        self.conference = "Independent"
+        self.conference = Conference
         self.stadium_name = StadiumName
         self.stadium_capacity = 10000
 
@@ -33,8 +33,9 @@ class School():
         self.all_americans = 0
         self.player_awards = 0
         self.drafted_players = 0
+        self.drafted_players_5years = [0,0,0,0,0] ##last season, two seasons ago, three seasons ago, four seasons ago, five seasons ago
         self.academics = 0
-        self.crowd_noise = 0
+        self.crowd_noise = 1
         self.facilities = 0
         self.prestige = 0
         self.pro_prep = 0
@@ -116,7 +117,8 @@ while loop == True:
     PrimaryColor = input("What is the school's primary color?")
     SecondaryColor = input("What is the school's secondary color?")
     StadiumName = input("What is the name of the school's football stadium?")
-    new_school_bucket.append(School(FullName,ShortName,Abbreviation,Nickname,State,City,PrimaryColor,SecondaryColor,StadiumName))
+    ConferenceName = input("What conference is the school in? Use the conference's abbreviation.")
+    new_school_bucket.append(School(FullName,ShortName,Abbreviation,Nickname,State,City,PrimaryColor,SecondaryColor,StadiumName,ConferenceName))
     again_question = True
     while again_question == True:
         another_school = input("Would you like to make another school?")
